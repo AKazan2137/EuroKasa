@@ -10,8 +10,8 @@ namespace EuroKasa
     {
         
 
-        public NonSpecialTicket(string name, decimal price, int quantity) :
-            base(name, price, quantity)
+        public NonSpecialTicket(int id, string name, decimal price, int quantity) :
+            base(id, name, price, quantity)
         {
          
         }

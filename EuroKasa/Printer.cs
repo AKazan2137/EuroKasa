@@ -6,19 +6,14 @@ using System.Threading.Tasks;
 
 namespace EuroKasa
 {
-    class Printer
+    class Printer:IPrinter
     {
-        public void Print(NonSpecialTicket nonSpecialTicket)
+        public void Print(Ticket ticket)
         {
-            Console.WriteLine("Nazwa: {0}", nonSpecialTicket.Name);
-            Console.WriteLine("Cena: {0}", nonSpecialTicket.Price);
+            Console.WriteLine("Nazwa: {0}", ticket.Name);
+            Console.WriteLine("Cena: {0}", ticket.Price);
             Console.WriteLine();
-        }
-        public void Print(SpecialTicket specialTicket)
-        {
-            Console.WriteLine("Nazwa: {0}", specialTicket.Name);
-            Console.WriteLine("Cena: {0}", specialTicket.Price);
-            Console.WriteLine();
+        
         }
     }
 }

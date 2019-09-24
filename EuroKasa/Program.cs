@@ -10,10 +10,10 @@ namespace EuroKasa
     {
         static void Main(string[] args)
         {
-            NonSpecialTicket Normalny = new NonSpecialTicket("Normalny",10.0M, 10);
-            NonSpecialTicket Ulgowy = new NonSpecialTicket("Ulgowy",5.0M, 25);
-            SpecialTicket MKarta = new SpecialTicket("MKarta",0.0M, 30);
-            Printer printer = new Printer();
+            NonSpecialTicket Normalny = new NonSpecialTicket(1, "Normalny",10.0M, 10);
+            NonSpecialTicket Ulgowy = new NonSpecialTicket(2, "Ulgowy",5.0M, 25);
+            SpecialTicket MKarta = new SpecialTicket(3, "MKarta",0.0M, 30);
+            IPrinter printer = new Printer();
             printer.Print(Normalny);
             printer.Print(Ulgowy);
             printer.Print(MKarta);

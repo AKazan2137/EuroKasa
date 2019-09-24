@@ -8,15 +8,18 @@ namespace EuroKasa
 {
     abstract class Ticket
     {
-        public string Name;
-        public decimal Price;
-        public int Quantity;
+        public string Name { get; }
+        public decimal Price { get; }
+        public int Quantity { get; }
+        private int Id { get; }
+        public string TicketNumber { get; }
 
-        public Ticket(string name, decimal price, int quantity)
+        public Ticket(int Id,string name, decimal price, int quantity)
         {
             Name = name;
             Price = price;
             Quantity = quantity;
+            TicketNumber = GenerateTicketNumber(Id);
         }
 
         public string GetQuantityOfTickets()
@@ -26,5 +29,11 @@ namespace EuroKasa
         }
 
         public abstract string TicketType();
+
+        string GenerateTicketNumber(int id)
+        {
+            var ticketNumber = string.Format("94{0:D10}", id);
+            return ticketNumber;
+        }
     }
 }
