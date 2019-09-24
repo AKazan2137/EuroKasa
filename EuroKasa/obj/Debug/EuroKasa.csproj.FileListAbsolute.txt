@@ -1,0 +1,7 @@
+C:\Users\Kinga\source\repos\EuroKasa\EuroKasa\bin\Debug\EuroKasa.exe.config
+C:\Users\Kinga\source\repos\EuroKasa\EuroKasa\bin\Debug\EuroKasa.exe
+C:\Users\Kinga\source\repos\EuroKasa\EuroKasa\bin\Debug\EuroKasa.pdb
+C:\Users\Kinga\source\repos\EuroKasa\EuroKasa\obj\Debug\EuroKasa.csprojAssemblyReference.cache
+C:\Users\Kinga\source\repos\EuroKasa\EuroKasa\obj\Debug\EuroKasa.csproj.CoreCompileInputs.cache
+C:\Users\Kinga\source\repos\EuroKasa\EuroKasa\obj\Debug\EuroKasa.exe
+C:\Users\Kinga\source\repos\EuroKasa\EuroKasa\obj\Debug\EuroKasa.pdb
